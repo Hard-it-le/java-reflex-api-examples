@@ -5,23 +5,52 @@ package com.reflex.demo;
  * @date 2022/09/11
  **/
 public class Person {
-    private String MSG = "Original";
+    private Integer age;
 
-    private final String FINAL_VALUE = "hello";
+    private String name;
 
-    /**
-     * @param head
-     * @param tail
-     */
-    private void privateMethod(String head, int tail) {
-        System.out.print(head + tail);
+    private String address;
+
+    public Person() {
     }
 
-    public String getMsg() {
-        return MSG;
+    public Person(Integer age, String name, String address) {
+        this.age = age;
+        this.name = name;
+        this.address = address;
     }
 
-    public String getFinalValue() {
-        return FINAL_VALUE;
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "age=" + age +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                '}';
     }
 }
