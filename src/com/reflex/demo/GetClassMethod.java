@@ -3,7 +3,7 @@ package com.reflex.demo;
 /**
  * @author 余嘉乐
  * @date 2022/09/11
- * 获取反射类的方法
+ * 获取反射类的三种方法
  **/
 public class GetClassMethod {
 
