@@ -17,14 +17,14 @@ public class GetConstructor {
 
             //注意查看构造器的顺序
             for (Constructor<?> constructor : constructors) {
-                System.out.println("获取所有的public权限的构造器getConstructors:" + constructor);
+                System.out.println("获取所有的 public 权限的构造器 getConstructors:" + constructor);
             }
             System.out.println("-===============================");
 
             //2、获取所有的构造器(getDeclaredConstructors)
             Constructor<?>[] declaredConstructors = aClass.getDeclaredConstructors();
             for (Constructor<?> declaredConstructor : declaredConstructors) {
-                System.out.println("获取所有的构造器getDeclaredConstructors:" + declaredConstructor);
+                System.out.println("获取所有的构造器 getDeclaredConstructors:" + declaredConstructor);
             }
             System.out.println("-===============================");
 

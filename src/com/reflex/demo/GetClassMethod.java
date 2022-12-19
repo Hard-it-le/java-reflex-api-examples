@@ -17,7 +17,7 @@ public class GetClassMethod {
 
 
     /**
-     * 反射获取方法一：通过new对象，然后使用对象.getClass来使用
+     * 反射获取方法一：通过 new 对象，然后使用对象 .getClass 来使用
      */
     public static void getClassMethod01(){
         Person person = new Person();
@@ -28,7 +28,7 @@ public class GetClassMethod {
 
 
     /**
-     * 反射获取方法二：直接使用类.class来使用
+     * 反射获取方法二：直接使用类.class 来使用
      */
     public static void getClassMethod02(){
         Class<Person> personClass = Person.class;
@@ -36,7 +36,7 @@ public class GetClassMethod {
     }
 
     /**
-     * 反射获取方法三（推荐使用）：使用Class.forName()。forName中包含需要反射的包路径和包名
+     * 反射获取方法三（推荐使用）：使用 Class.forName()。forName 中包含需要反射的包路径和包名
      */
     public static void getClassMainMethod(){
         System.out.println("使用 Class.forName() 来使用反射前的 Person：" + Class.class);
